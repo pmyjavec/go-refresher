@@ -18,4 +18,6 @@ Re-leaning Go after some time off, useful notes.
 * Slices are always associated with an underlying array `x := make([]float64, 5)`, a slice can be shorter than the associated array but never longer.
 * Creating new slices can be done using the [low : high] expression, `slc := arr[0:5]` or `allElements := arr[:]`
 * Maps are hash tables, to create a map and initialize use `make()`, `people := make(map[string]string)`
-
+* `defer` schedules a function call to be run upon completion of the containing block
+* Functions can be called recursively
+* Closures or functions within functions are supported, closures have access to variables in the containing block
