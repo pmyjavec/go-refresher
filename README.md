@@ -21,3 +21,8 @@ Re-leaning Go after some time off, useful notes.
 * `defer` schedules a function call to be run upon completion of the containing block
 * Functions can be called recursively
 * Closures or functions within functions are supported, closures have access to variables in the containing block
+* Pointers can be created using `new()`, dereferenced with `*`, the `&` operator will return a pointer to an existing variable.
+* A `struct` type allows us to easily represent real world objects by groupd of different types using named fields.
+* Structs also support Embeded types, this is analoguous to mixins in Ruby. A Dog type can easily behave like an Animal by emdedding the Animal type and receiving all it's methods.
+* Go supports methods and can be defined similar to functions, just a receiver (usually a `struct`) needs to be specified `func (a *Animal) Eat()`, call a method with the `.` operator. `dog := new(Animal); dog.Eat()`
+* Interfaces are supported, easily ensuring anything pased into a function or method meets particular requirements.
