@@ -31,3 +31,7 @@ Re-leaning Go after some time off, useful notes.
 * `select` is similar to switch but for channels
 * Channels may be buffered, that is can receive only receive a specified amount of data and will block until the buffer channel is free
 * Channel directions may be specified, for example a function may wish to only read from a channel or write to one.
+* Packages are used to break up applications, package names match the folders they fall in
+* Public functions of a package need to start with capital letters
+* Package aliases can be created, `import m github.com/awesomecoder/math`, `m.Random(10)`
+* Documentation for a function is specified in the line above it's definition `// Document all functions`, view docs nicely over http with `godoc -http="8080"`
