@@ -8,7 +8,7 @@ Re-leaning Go after some time off, useful notes.
 * `rune`, alias for `int32`
 * Create variables using `var` or `:=`, examples: `var feet float64` or `feet := 2.0`
 * Create constants using `const`, example: `cont hello string = 'Hello World!'`
-* Loops, Go only has one type of loop, the `for` loop,  no while, do, until etc
+* Loops, Go only has one type of loop, `for`,  no while, do, until etc
 * Loops can be written like `for i <= 10 {}` or `for i := 1; i <= 10; i++ {}`
 * Other control strucures are `if` and `switch`
 * Functions named after types perform conversions, `float64(24) == 24.0`
@@ -26,3 +26,7 @@ Re-leaning Go after some time off, useful notes.
 * Structs also support Embeded types, this is analoguous to mixins in Ruby. A Dog type can easily behave like an Animal by emdedding the Animal type and receiving all it's methods.
 * Go supports methods and can be defined similar to functions, just a receiver (usually a `struct`) needs to be specified `func (a *Animal) Eat()`, call a method with the `.` operator. `dog := new(Animal); dog.Eat()`
 * Interfaces are supported, easily ensuring anything pased into a function or method meets particular requirements.
+* Goroutines are functions capable of running concurrently
+* Channels allow Go-routines to communicate
+* `select` is similar to switch but for channels
+* Channels may be buffered, that is can receive only receive a specified amount of data and will block until the buffer channel is free
