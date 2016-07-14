@@ -6,10 +6,6 @@ import (
 	"time"
 )
 
-func name(params) {
-
-}
-
 func pinger(c chan string) {
 	for i := 0; ; i++ {
 		fmt.Println("Sending...")
@@ -20,7 +16,7 @@ func pinger(c chan string) {
 
 func printer(c chan string) {
 	for {
-		time.Sleep(time.Duration(rand.Int63()))
+		time.Sleep(time.Duration(rand.Intn(30)))
 		fmt.Println(<-c)
 	}
 }

@@ -30,3 +30,4 @@ Re-leaning Go after some time off, useful notes.
 * Channels allow Go-routines to communicate
 * `select` is similar to switch but for channels
 * Channels may be buffered, that is can receive only receive a specified amount of data and will block until the buffer channel is free
+* Channel directions may be specified, for example a function may wish to only read from a channel or write to one.
